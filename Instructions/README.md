@@ -31,7 +31,7 @@ While it's not needed anymore (the robot can be controlled remotely using _teleo
 
 It's recommended to use ```colcon build --packages-up-to package-name``` at least for the first builds, to make sure all dependencies are also built.
 
-## TO DO
+## TODO Electronics
 
 ### Add a fuse
 
