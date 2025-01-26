@@ -31,6 +31,12 @@ While it's not needed anymore (the robot can be controlled remotely using _teleo
 
 It's recommended to use ```colcon build --packages-up-to package-name``` at least for the first builds, to make sure all dependencies are also built.
 
+## Steering
+
+Use ```ros2 run teleop_twist_keyboard teleop_twist_keyboard```, but be careful about the speed, particularly the linear speed. You can decrease it directly using the interface.
+
+TODO There is a bug here, where speed increase/decrease buttons repeat the last movement command, too. Press any key to send a stop command (even if the robot is stopped), before changing the speeds.
+
 ## TODO Electronics
 
 ### Add a fuse

@@ -23,9 +23,9 @@ def generate_launch_description():
                 output='screen',
                 parameters=[{
                     'laser_scan_topic' : '/scan',
-                    'odom_topic' : '/odom_rf2o',
-                    'publish_tf' : False,
-                    'base_frame_id' : 'base_link',
+                    'odom_topic' : '/odom_rf2o', # Change it to /odom when you want to use the odometry only from this source (recommended, not necessary)
+                    'publish_tf' : True, # Set to true when you want to use the odometry only from this source (Don't forget to also publish base_footprint -> base_link and base_link -> laser)
+                    'base_frame_id' : 'base_footprint',
                     'odom_frame_id' : 'odom',
                     'init_pose_from_topic' : '',
                     'freq' : 20.0}],
